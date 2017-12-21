@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>画板</title>
+  </head>
+
+  <body>
+    <canvas id="canvas" class="canvas" width="300" height="300"></canvas>
+    <div class="controlPanel">
+      <svg id="pen" class="icon active" aria-hidden="true">
+        <use xlink:href="#icon-huabi"></use>
+      </svg>
+      <svg id="eraser" class="icon" aria-hidden="true">
+        <use xlink:href="#icon-xiangpica_s"></use>
+      </svg>
+      <svg id="clear" class="icon" aria-hidden="true">
+        <use xlink:href="#icon-qingkong"></use>
+      </svg>
+      <svg id="download" class="icon" aria-hidden="true">
+        <use xlink:href="#icon-xiazai"></use>
+      </svg>
+    </div>
+    <ol class="penColor">
+      <li id="black" class="black active"></li>
+      <li id="red" class="red"></li>
+      <li id="yellow" class="yellow"></li>
+      <li id="skyblue" class="skyblue"></li>
+    </ol>
+    <ol class="lineWidth">
+      <li id="twoPx" class="linePx active"></li>
+      <li id="threePx" class="linePx"></li>
+      <li id="fivePx" class="linePx"></li>
+      <li></li>
+    </ol>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="//at.alicdn.com/t/font_517265_42lx5u73cmuqh0k9.js"></script>
+  </body>
+
+</html>
